@@ -1,0 +1,35 @@
+.container.innovacion {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/src/assets/FondoTres.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.LogoInnova {
+    position: absolute;
+    left: 2rem;
+}
+
+.LogoLargo {
+    width: 200px;
+}
+
+.LogoInnova h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #0dac4b;
+    font-family: var(--text-font-uppercase);
+}
+
+.LogoInnova h3 span {
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .container.innovacion {
+        flex-direction: column;
+    }
+}

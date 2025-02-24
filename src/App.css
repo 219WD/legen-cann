@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --text-color-claro: #fff;
+  --bg-color-claro: #b1b1b1;
+  --bg-color-oscuro: #808080;
+  --text-font-uppercase: "Inter", sans-serif;
+  --text-font-regular: "Rubik", serif;
+  --text-font-bold: "Rubik", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
