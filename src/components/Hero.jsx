@@ -7,7 +7,7 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   return (
-    <div className='container hero'>
+    <div className='container hero' id='hero'>
       <div className="logo">
         <img src={Logo} alt="Logo" />
       </div>

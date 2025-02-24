@@ -4,7 +4,7 @@ import './css/About.css'
 
 const About = () => {
     return (
-        <div className='container about'>
+        <div className='container about' id='quienes-somos'>
             <img src={Cogollo} alt="Cogollo" />
             <div className="texto">
                 <h2>¿Quiénes somos?</h2>

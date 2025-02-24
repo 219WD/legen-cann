@@ -78,7 +78,7 @@ const MisionVision = () => {
   };
 
   return (
-    <div className="container mision-vision">
+    <div className="container mision-vision" id="nuestro-enfoque">
       {/* Slider con GSAP */}
       <div className="text-slider">
         <button className="arrow prev" onClick={prevSlide}>

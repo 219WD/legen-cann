@@ -1,9 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faInstagram, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons';
 import './css/Footer.css';
 import Logo from '../assets/Logo.svg'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -20,7 +21,7 @@ const Footer = () => {
               />
             </div>
             <p className="footer-text">
-            Empresa dedicada a la investigación y desarrollo del Cannabis medicinal-Ley 27.350
+              Empresa dedicada a la investigación y desarrollo del Cannabis medicinal-Ley 27.350
             </p>
           </div>
 
@@ -28,10 +29,10 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-title">Menu</h3>
             <ul className="footer-list">
-              <li><a href="/hero">Inicio</a></li>
-              <li><a href="/pages">¿Quiénes somos?</a></li>
-              <li><a href="/about-us">Nuestro enfoque</a></li>
-              <li><a href="/services">Investigación</a></li>
+              <li><Link to="/#hero">Inicio</Link></li>
+              <li><Link to="/#quienes-somos">¿Quiénes somos?</Link></li>
+              <li><Link to="/#nuestro-enfoque">Nuestro enfoque</Link></li>
+              <li><Link to="/#investigacion">Investigación</Link></li>
             </ul>
           </div>
 
@@ -39,10 +40,10 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-title">Mensajes rápidos</h3>
             <ul className="footer-list">
-              <li><a href="/contact">Contactanos</a></li>
-              <li><a href="/faqs">Preguntanos</a></li>
-              <li><a href="/booking">Ayudanos</a></li>
-              <li><a href="/pages">Documentos</a></li>
+              <li><a href="#">Contactanos</a></li>
+              <li><a href="#">Preguntanos</a></li>
+              <li><a href="#">Ayudanos</a></li>
+              <li><a href="#">Documentos</a></li>
             </ul>
           </div>
 
@@ -50,10 +51,10 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-title">Servicios</h3>
             <ul className="footer-list">
-            <li><a href="/hero">Inicio</a></li>
-              <li><a href="/pages">¿Quiénes somos?</a></li>
-              <li><a href="/about-us">Nuestro enfoque</a></li>
-              <li><a href="/services">Investigación</a></li>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">¿Quiénes somos?</a></li>
+              <li><a href="#">Nuestro enfoque</a></li>
+              <li><a href="#">Investigación</a></li>
             </ul>
           </div>
         </div>
