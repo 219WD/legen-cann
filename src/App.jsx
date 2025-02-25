@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Helmet>
           <title>LEGEN | Proyecto de Fitomejoramiento en Cannabis para Extracción de Aceite Medicinal</title>
-          <link rel="icon" type="image/png" href="/legen-logo.png" />
+          <link rel="icon" type="image/svg+xml" href="/IsoLogo.svg" />
           <meta
             name="description"
             content="LEGEN es un proyecto de fitomejoramiento en cannabis para la extracción de aceite medicinal, ubicado en Tafí Viejo, Tucumán. Desarrollamos soluciones innovadoras en genética y cultivo."
