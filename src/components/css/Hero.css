@@ -68,4 +68,30 @@ h1 {
     background-position: center;
     background-size: cover;
   }
+
+  h1 {
+    font-size: 1.5rem;
+    color: var(--text-color-claro);
+    font-family: var(--text-font-bold);
+    text-align: left;
+    text-transform: uppercase;
+  }
+  
+  .titulo {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+  }
+  
+  .subtitulo {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--text-color-claro);
+    font-family: var(--text-font-uppercase);
+    font-weight: 100;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
 }
