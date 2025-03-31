@@ -110,7 +110,6 @@ const MisionVision = () => {
           allow="fullscreen; encrypted-media"
           className="video-iframe"
         ></iframe>
-        <button className="play-button">▶ Reproducir</button>
       </div>
     </div>
   );
