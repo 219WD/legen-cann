@@ -32,15 +32,12 @@ const MisionVision = () => {
   const textRef = useRef(null);
   const [index, setIndex] = useState(0);
   const intervalRef = useRef(null);
+  const [player, setPlayer] = useState(null);
 
   useEffect(() => {
-    // Configuración del video Vimeo
     if (videoRef.current) {
-      const player = new Player(videoRef.current);
-      player.setVolume(1);
-      player.play().catch(() => {
-        console.log("La reproducción automática fue bloqueada por el navegador");
-      });
+      const vimeoPlayer = new Player(videoRef.current, { autoplay: false });
+      setPlayer(vimeoPlayer);
     }
 
     startAutoSlide();
@@ -77,6 +74,12 @@ const MisionVision = () => {
     changeSlide((index - 1 + slides.length) % slides.length);
   };
 
+  const playVideo = () => {
+    if (player) {
+      player.play();
+    }
+  };
+
   return (
     <div className="container mision-vision" id="nuestro-enfoque">
       {/* Slider con GSAP */}
@@ -94,19 +97,20 @@ const MisionVision = () => {
         </button>
       </div>
 
-    <div className="logoGreen">
-      <img src={IsoLogo} alt="Logo" className="IsoLogo" />
-    </div>
+      <div className="logoGreen">
+        <img src={IsoLogo} alt="Logo" className="IsoLogo" />
+      </div>
 
-      {/* Video a la derecha */}
-      <div className="video-container">
+      {/* Video con reproducción manual */}
+      <div className="video-container" onClick={playVideo}>
         <iframe
           ref={videoRef}
           src="https://player.vimeo.com/video/1059738776?h=3fc5ac0fb7&badge=0&autopause=0&player_id=0&app_id=58479"
           frameBorder="0"
-          allow="autoplay; fullscreen; encrypted-media"
+          allow="fullscreen; encrypted-media"
           className="video-iframe"
         ></iframe>
+        <button className="play-button">▶ Reproducir</button>
       </div>
     </div>
   );
